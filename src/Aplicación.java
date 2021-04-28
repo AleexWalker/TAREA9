@@ -39,9 +39,19 @@ public class Aplicación {
         listaAlumnado.add(alumnoCuarto);
         listaAlumnado.add(alumnoQuinto);
 
-        alumnoPrimero.mostrarAsignaturas();
-        alum
+        System.out.println("----------------LISTADO DE ALUMNOS/ASIGNATURAS----------------");
+        System.out.println(alumnoPrimero.mostrarAsignaturas());
+        System.out.println(alumnoSegundo.mostrarAsignaturas());
+        System.out.println(alumnoTercero.mostrarAsignaturas());
+        System.out.println(alumnoCuarto.mostrarAsignaturas());
+        System.out.println(alumnoQuinto.mostrarAsignaturas());
 
+        System.out.println("----------------LISTADO DE PAGOS----------------");
+        System.out.println(alumnoPrimero.pagoMensual());
+        System.out.println(alumnoSegundo.pagoMensual());
+        System.out.println(alumnoTercero.pagoMensual());
+        System.out.println(alumnoCuarto.pagoMensual());
+        System.out.println(alumnoQuinto.pagoMensual());
 
     }
 }
