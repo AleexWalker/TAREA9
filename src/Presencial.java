@@ -19,7 +19,6 @@ public class Presencial extends Alumno {
 
     @Override
     public double pagoMensual() {
-        System.out.println("El alumno " + super.getNombre() + " está pagando:" );
         return (matriculaCurso + plusPorConvocatoria * numeroConvocatoria)/12;
     }
 

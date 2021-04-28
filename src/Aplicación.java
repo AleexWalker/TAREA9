@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Aplicación {
     public static void main(String[] args) {
+        double costeTotal;
 
         Profesor profesorFísica = new Profesor("Albert" , 50, "Física");
         Profesor profesorEléctrica = new Profesor("Tesla" , 35, "Eléctrica");
@@ -47,11 +48,13 @@ public class Aplicación {
         System.out.println(alumnoQuinto.mostrarAsignaturas());
 
         System.out.println("----------------LISTADO DE PAGOS----------------");
-        System.out.println(alumnoPrimero.pagoMensual());
-        System.out.println(alumnoSegundo.pagoMensual());
-        System.out.println(alumnoTercero.pagoMensual());
-        System.out.println(alumnoCuarto.pagoMensual());
-        System.out.println(alumnoQuinto.pagoMensual());
+        System.out.println("El alumno " + alumnoPrimero.getNombre() + " está pagando: " + alumnoPrimero.pagoMensual());
+        System.out.println("El alumno " + alumnoSegundo.getNombre() + " está pagando: " + alumnoSegundo.pagoMensual());
+        System.out.println("El alumno " + alumnoTercero.getNombre() + " está pagando: " + alumnoTercero.pagoMensual());
+        System.out.println("El alumno " + alumnoCuarto.getNombre() + " está pagando: " + alumnoCuarto.pagoMensual());
+        System.out.println("El alumno " + alumnoQuinto.getNombre() + " está pagando: " + alumnoQuinto.pagoMensual());
 
+        costeTotal = alumnoPrimero.pagoMensual() + alumnoSegundo.pagoMensual() + alumnoTercero.pagoMensual() + alumnoCuarto.pagoMensual() + alumnoQuinto.pagoMensual();
+        System.out.print("El coste total asciende a: " + costeTotal + "€");
     }
 }

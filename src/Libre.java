@@ -12,7 +12,6 @@ public class Libre extends Alumno {
 
     @Override
     public double pagoMensual() {
-        System.out.println("El alumno " + super.getNombre() + "está pagando:");
         return PRECIO_HORA * numeroHorasDiarias * 30;
     }
 
